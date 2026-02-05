@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BTTH1 BT4</title>
+</head>
+
+<body>
+    <form action="#" method="POST">
+        <table>
+            <tr>
+                <td colspan="2"><b><h3>Basic Info</h3></b><hr></td>
+            </tr>
+            <tr>
+                <th style="text-align:left;">Employee ID</th>
+                <td>9<input type="hidden" name="employee_id" value="9"></td>
+            </tr>
+            <tr>
+                <th style="text-align:left;">Last Name</th>
+                <td><input type="text" name="last_name" style="width: 500px;" value="Dodsworth"></td>
+            </tr>
+            <tr>
+                <th style="text-align:left;">First Name</th>
+                <td><input type="text" name="first_name" style="width: 500px;" value="Anne"></td>
+            </tr>
+            <tr>
+                <th style="text-align:left;" rowspan="4">Gender</th>
+                <td>
+                    <input type="radio" id="male" name="gender" value="male">
+                    <label for="male">Male</label>
+                </td>
+            </tr>
+            <tr>
+                <td> 
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label for="female">Female</label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="radio" id="xxx" name="gender" value="xxx">
+                    <label for="xxx">XXX</label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="radio" id="zzz" name="gender" value="zzz" checked>
+                    <label for="zzz">ZZZ</label>
+                </td>
+            </tr>
+            <tr>
+                <th style="text-align:left;">Title</th>
+                <td>
+                    <input type="text" name="title" style="width: 500px;" value=" Sales Representative">
+                </td>
+            </tr>
+            <tr>
+                <th style="text-align:left;">Suffix</th>
+                <td><input name="suffix" style="width: 500px;" type="text" value="Ms."></td>
+            </tr>
+            <tr>
+                <th style="text-align:left;">BirthDate</th>
+                <td><input name="birth_date" style="width: 500px;" type="text" value="1969-07-02 00:00:00"></td>
+            </tr>
+            <tr>
+                <th style="text-align:left;">HireDate</th>
+                <td><input name="hire_date" style="width: 500px;" type="text" value="1994-11-15 00:00:00"></td>
+            </tr>
+            <tr>
+                <th style="text-align:left;">SSN # (if applicable)</th>
+                <td><input name="ssn" style="width: 500px;" type="text"></td>
+            </tr>
+            <tr>
+                <th style="text-align:left;">Reports To</th>
+                <td>
+                    <select name="reports_to">
+                        <option value="Buchanan" selected>Buchanan</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2"><b><h3>Contact Info</h3></b><hr></td>
+            </tr>
+            <tr>
+                <th style="text-align:left;">Email</th>
+                <td><input name="email" style="width: 500px;" type="email" placeholder="name@example.com"></td>
+            </tr>
+            <tr>
+                <th style="text-align:left;">Address</th>
+                <td><input name="address" style="width: 500px;" type="text" value="7 Houndstooth Rd."></td>
+            </tr>
+            <tr>
+                <th style="text-align:left;">City</th>
+                <td><input name="city" style="width: 500px;" type="text" value="London"></td>
+            </tr>
+            <tr>
+                <th style="text-align:left;">Region</th>
+                <td><input name="region" style="width: 500px;" type="text"></td>
+            </tr>
+            <tr>
+                <th style="text-align:left;">Postal Code</th>
+                <td><input name="postal_code" style="width: 500px;" type="text" value="WG2 7LT"></td>
+            </tr>
+            <tr>
+                <th style="text-align:left;">Country</th>
+                <td>
+                    <select name="country">
+                        <option value="Russian Federation" selected>Russian Federation</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <th style="text-align:left;">US Home Phone</th>
+                <td><input name="phone" style="width: 500px;" type="text" value="(234)234-2342"></td>
+            </tr>
+            <tr>
+                <th style="text-align:left;">Photo</th>
+                <td><input name="photo" style="width: 500px;" type="text" value="EmpID9.bmp"></td>
+            </tr>
+            <tr>
+                <th style="text-align: left;" colspan="2">
+                    <h3>Optional Info</h3>
+                    <hr>
+                </th>
+            </tr>
+            <tr>
+                <th style="text-align: left;">Notes</th>
+                <td><textarea name="notes" rows="6" cols="55">
+Anne has a BA degree in English from St.Lawrence College.
+She is fluent in French and German.ZZZ</textarea></td>
+            </tr>
+
+            <tr>
+                <th rowspan="2" style="text-align: left;"><label>Preferred Shift</label></th>
+                <td><input type="checkbox" name="shift_regular" style="width:40px;"> Regular</td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" name="shift_gravy" checked style="width:40px;"> Gravy Yard</td>
+            </tr>
+            <tr>
+                <th style="text-align: left;">Active?</th>
+                <td><input type="checkbox" name="active" checked style="width:40px;"></td>
+            </tr>
+
+            <tr>
+                <th style="text-align:left;" rowspan="2"><label>Are you human?</label></th>
+                <th>
+                    <h1>TIDAWO</h1>
+                </th>
+            </tr>
+            <tr>
+                <td style="text-align:center;">Click to change</td>
+            </tr>
+            <tr>
+                <th></th>
+                <td><input type="text" name="captcha" style="width:500px;"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td style="text-align: right;">
+                    <button type="submit">Submit</button>
+                    <button type="reset">Cancel</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+
+</html>
