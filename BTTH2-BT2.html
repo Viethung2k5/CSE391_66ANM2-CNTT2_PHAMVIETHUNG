@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Travel Goals</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, sans-serif;
+}
+
+body{
+    background:#4b0f3d;  
+}
+
+.wrapper{
+    width:900px;
+    margin:40px auto;
+    border:3px solid #ff66cc;
+    background:#bfe6f2;      
+}
+
+header{
+    padding:15px 25px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo{
+    color:#ffd700;
+    font-weight:bold;
+    font-size:20px;
+}
+
+nav a{
+    margin-left:20px;
+    text-decoration:none;
+    color:#ffd700;
+    font-size:14px;
+}
+
+.hero{
+    background:url("https://images.unsplash.com/photo-1507525428034-b723cf961d3e") center/cover no-repeat;
+    height:300px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    position:relative;
+}
+
+.hero-box{
+    background:rgba(0,0,0,0.6);
+    padding:25px 40px;
+    text-align:center;
+    color:white;
+}
+
+.hero-box h1{
+    margin-bottom:10px;
+}
+
+.hero-box p{
+    font-size:13px;
+    margin-bottom:10px;
+}
+
+.hero-box button{
+    background:#ffd700;
+    border:none;
+    padding:6px 12px;
+    cursor:pointer;
+}
+
+main{
+    padding:20px;
+}
+
+main h2{
+    text-align:center;
+    font-size:14px;
+    margin-bottom:15px;
+}
+
+.cards{
+    display:flex;
+    justify-content:space-between;
+    gap:15px;
+}
+
+.card{
+    background:white;
+    flex:1;
+    text-align:center;
+}
+
+.card img{
+    width:100%;
+    height:120px;
+    object-fit:cover;
+}
+
+.card p{
+    font-size:11px;
+    padding:8px;
+}
+
+footer{
+    background:#111;
+    text-align:center;
+    padding:15px;
+}
+
+footer span{
+    color:white;
+    margin:0 10px;
+    font-size:20px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="wrapper">
+
+<header>
+    <div class="logo">TRAVEL GOALS</div>
+    <nav>
+        <a href="#">Destinations</a>
+        <a href="#">About</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <div class="hero-box">
+        <h1>JOE'S TRAVEL PAGE</h1>
+        <p>LET'S EXPLORE THE WORLD TOGETHER</p>
+        <button>Discover places</button>
+    </div>
+</section>
+
+<main>
+    <h2>HIGHLIGHTS</h2>
+
+    <div class="cards">
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1505761671935-60b3a7427bad">
+            <p>MIAMI USA</p>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1509395176047-4a66953fd231">
+            <p>MUNICH GERMANY</p>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1508057198894-247b23fe5ade">
+            <p>BARCELONA SPAIN</p>
+        </div>
+    </div>
+</main>
+
+<footer>
+    <span>📷</span>
+    <span>ⓕ</span>
+</footer>
+
+</div>
+
+</body>
+</html>

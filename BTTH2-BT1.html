@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài tập Flexbox Form</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #dbd0d0;
+            padding: 30px;
+        }
+
+        .title {
+            background: #8fd0e6;
+            padding: 10px;
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        .container {
+            background: #ddd;
+            border: 2px solid #333;
+            padding: 30px;
+            margin-top: 10px;
+        }
+
+        h3 {
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+
+        .row {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .row input {
+            flex: 1 1 300px;
+            min-width: 250px;
+        }
+
+        input,
+        textarea {
+            padding: 12px;
+            border: 1px solid #bbb;
+            border-radius: 3px;
+            font-size: 14px;
+            width: 100%;
+        }
+
+        textarea {
+            height: 150px;
+            resize: none;
+        }
+
+        .bottom {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 10px;
+        }
+
+        button {
+            background: #0ddd3a;
+            border: none;
+            padding: 10px 20px;
+            color: rgb(238, 224, 224);
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #c88f4d;
+        }
+
+        .note {
+            font-size: 13px;
+            color: #666;
+        }
+
+        @media (max-width: 600px) {
+            .row {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h3>Get in touch with us by filling contact form below</h3>
+
+        <form>
+            <div class="row">
+                <input type="text" placeholder="* Enter your full name" required>
+                <input type="email" placeholder="* Enter your email address" required>
+            </div>
+
+            <input type="text" placeholder="Enter your subject">
+
+            <textarea placeholder="* Your message here..." required></textarea>
+
+            <div class="bottom">
+                <button type="submit">Send message</button>
+                <div class="note">
+                    * Please fill all required form field, thanks!
+                </div>
+            </div>
+        </form>
+    </div>
+
+</body>
+
+</html>
