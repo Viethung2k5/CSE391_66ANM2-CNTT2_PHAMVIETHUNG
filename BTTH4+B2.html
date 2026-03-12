@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Đặt Hàng Online</title>
+    <link rel="stylesheet" href="BTTH4+B2.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>🛒 Đặt Hàng Online</h1>
+
+        <form id="orderForm">
+
+            <div class="form-group">
+                <label>Tên sản phẩm</label>
+                <select id="product">
+                    <option value="">-- Chọn sản phẩm --</option>
+                    <option value="ao">Áo</option>
+                    <option value="quan">Quần</option>
+                    <option value="giay">Giày</option>
+                </select>
+                <div class="error" id="productError"></div>
+            </div>
+
+            <div class="form-group">
+                <label>Số lượng</label>
+                <input type="number" id="quantity" min="1" max="99">
+                <div class="error" id="quantityError"></div>
+            </div>
+
+            <div class="form-group">
+                <label>Ngày giao hàng</label>
+                <input type="date" id="deliveryDate">
+                <div class="error" id="dateError"></div>
+            </div>
+
+            <div class="form-group">
+                <label>Địa chỉ giao</label>
+                <input type="text" id="address" placeholder="Nhập địa chỉ giao hàng">
+                <div class="error" id="addressError"></div>
+            </div>
+
+            <div class="form-group">
+                <label>Ghi chú</label>
+                <textarea id="note" placeholder="Ghi chú thêm..."></textarea>
+                <div class="char-count" id="charCount">0/200</div>
+                <div class="error" id="noteError"></div>
+            </div>
+
+            <div class="form-group">
+                <label>Phương thức thanh toán</label>
+
+                <div class="radio-group">
+
+                    <label class="radio-card">
+                        <input type="radio" name="payment" value="COD">
+                        <span>COD</span>
+                    </label>
+
+                    <label class="radio-card">
+                        <input type="radio" name="payment" value="Bank">
+                        <span>Chuyển khoản</span>
+                    </label>
+
+                    <label class="radio-card">
+                        <input type="radio" name="payment" value="Wallet">
+                        <span>Ví điện tử</span>
+                    </label>
+
+                </div>
+
+                <div class="error" id="paymentError"></div>
+            </div>
+
+            <div class="total-box">
+                Tổng tiền: <span id="total">0</span> VNĐ
+            </div>
+
+            <button type="submit" class="order-btn">
+                Đặt hàng
+            </button>
+
+        </form>
+
+
+        <div id="confirmBox">
+
+            <h3>Xác nhận đơn hàng</h3>
+
+            <p id="orderSummary"></p>
+
+            <div class="confirm-buttons">
+                <button id="confirmBtn" class="confirm">Xác nhận</button>
+                <button id="cancelBtn" class="cancel">Hủy</button>
+            </div>
+
+        </div>
+
+        <div id="successMsg">
+            🎉 Đặt hàng thành công!
+        </div>
+
+    </div>
+
+    <script src="BTTH4+B2.js"></script>
+
+</body>
+
+</html>

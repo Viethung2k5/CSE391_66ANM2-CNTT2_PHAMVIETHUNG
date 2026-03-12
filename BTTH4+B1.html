@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Quản lý điểm sinh viên</title>
+    <link rel="stylesheet" href="BTTH4+B1.css">
+</head>
+
+<body>
+
+    <div class="container">\
+
+
+        <h2>🎓 Student Score Manager</h2>
+
+        <div class="form-area">
+
+            <input type="text" id="name" placeholder="Nhập họ tên sinh viên">
+
+            <input type="number" id="score" placeholder="Nhập điểm (0 - 10)">
+
+            <button id="addBtn">Thêm</button>
+
+        </div>
+
+        <div class="filter-area">
+
+            <input type="text" id="search" placeholder="🔎 Tìm sinh viên...">
+
+            <select id="filter">
+                <option value="all">Tất cả</option>
+                <option value="Giỏi">Giỏi</option>
+                <option value="Khá">Khá</option>
+                <option value="Trung bình">Trung bình</option>
+                <option value="Yếu">Yếu</option>
+            </select>
+
+        </div>
+
+        <table>
+
+            <thead>
+
+                <tr>
+                    <th>STT</th>
+                    <th>Họ tên</th>
+                    <th id="scoreHeader">Điểm</th>
+                    <th>Xếp loại</th>
+                    <th>Thao tác</th>
+                </tr>
+
+            </thead>
+
+            <tbody id="tableBody"></tbody>
+
+        </table>
+
+        <div id="stats"></div>
+
+    </div>
+
+    <script src="BTTH4+B1.js"></script>
+
+</body>
+
+</html>
